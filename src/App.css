@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: Verdana;
+  overflow: hidden;
+}
+.grid_container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  grid-template-columns: auto auto;
+}
+h1 {
+  display: inline;
+  padding-left: 10px;
+  margin: 0;
+  font-size: 40px;
+  grid-area: heading;
+  align-items: center;
+}
+
+.app {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  filter: brightness(70%);
+}
+.Search{
+    margin-left: 120px;
+}
+.box {
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  padding-left: 20px;
+}
+.boxy {
+  color: white;
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  border-radius: 60%;
+}
+p {
+  color: white;
+}
+input {
+    border-radius: 10%;
+  margin: 20px 60px 25px 24px;
+  height: 100%;
+  width: 25%;
+  font-size: 33px;
+  align-items: center;
+}
+
+.main_body {
+  position: relative;
+  height: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+button {
+    border-radius: 10%;
+
+  background-color: wheat;
+  font-size: 33px;
+  align-items: center;
+}
+
+p.temp {
+  font-size: 33px;
+
+  display: inline;
+  grid-area: temp;
+}
+
+img.icon {
+  grid-area: icon;
+}
+.middle {
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  display: inline-grid;
+}
+
+.bottom {
+  padding-top: 40px;
+  padding-left: 40px;
+  display: grid;
+  grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card6";
+  grid-gap: 40px;
+}
+
+.card {
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  height: 110px;
+  width: 150px;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card4 {
+  padding-top: 20px;
+  grid-area: card4;
+}
+
+.card5 {
+  padding-top: 20px;
+  grid-area: card5;
+}
+
+.card6 {
+  padding-top: 20px;
+  grid-area: card6;
+}
+
+svg {
+  font-size: 30px;
+}
+/* here is the css */
+
+@media (max-width: 768px) {
+  .main_body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  input {
+    margin: 10px;
+    font-size: 16px;
+  }
+  .Search{
+    margin-left: 0px;
+}
+  button {
+    border-radius: 20%;
+
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+  p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  p.temp {
+    font-size: 14px;
+  }
+
+
+  img.icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .middle {
+    padding-top: 20px;
+  }
+
+  .bottom {
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6";
+    grid-gap: 10px;
+  }
+
+  .card {
+    height: 80px;
+    width: 100px;
+    padding: 10px;
+  }
+
+  .boxy {
+    margin-top: 20px;
+    /* align-items: center; */
+    margin-left: 55px;
+    width: 60%;
+  }
+}
