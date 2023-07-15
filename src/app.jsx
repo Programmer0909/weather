@@ -94,7 +94,7 @@ function App() {
                   onKeyDown={enterpressed}
                   placeholder="Katni"
                 />
-                <button>Enter</button>
+            
               </div>
             </div>
             <div className="middle">
